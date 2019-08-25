@@ -24,7 +24,12 @@
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-Cypress.Commands.add("visited", ()=> {
-  const url = `https://${Cypress.env("baseURL")}`;
+Cypress.Commands.add("visitedOutsideURL", ()=> {
+  const url = `${Cypress.env("outsideURL")}`;
+  cy.visit(url);
+})
+
+Cypress.Commands.add("visitedLocalURL", ()=> {
+  const url = `${Cypress.env("localURL")}`;
   cy.visit(url);
 })

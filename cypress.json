@@ -1,5 +1,6 @@
 {
   "env": {
-    "baseURL": "example.cypress.io"
+    "outsideURL": "https://example.cypress.io",
+    "localURL": "http://localhost:3000"
   }
 }

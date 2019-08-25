@@ -17,9 +17,5 @@
 
 import './commands'
 
-beforeEach(function() {
-  cy.visited();
-})
-
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
