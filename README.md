@@ -14,4 +14,12 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ### `npm run cypress:open`
 
-Runs cypress interface to tests. If you want to run tests on localhost, first you have to use 'npm start' command.
+Runs cypress interface to tests.
+
+### `npm run cypress`
+
+Runs all tests in terminal.
+
+#### IF YOU WANT TO RUN TESTS YOU HAVE TO:
+1. Run app on your localhost -> 'npm run start'.
+2. Run tests in cypress interface -> 'npm run cypress:open' or run tests all in terminal -> 'npm run cypress'.
